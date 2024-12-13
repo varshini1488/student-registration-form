@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Registration Form</h1>
+        <form id="registrationForm" action="process.php" method="POST" onsubmit="return validateForm()">
+            <div class="input-group">
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" name="first_name" required>
+            </div>
+            <div class="input-group">
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="last_name" required>
+            </div>
+            <div class="input-group">
+                <label for="sem">Semester</label>
+                <select id="sem" name="sem" required>
+                    <option value="" disabled selected>Select Semester</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="section">Section</label>
+                <input type="text" id="section" name="section" required>
+            </div>
+            <div class="input-group">
+                <label for="college">College</label>
+                <input type="text" id="college" name="college" required>
+            </div>
+            <div class="input-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="hobbies">Hobbies</label>
+                <input type="text" id="hobbies" name="hobbies" placeholder="e.g., Reading, Sports">
+            </div>
+            <div class="input-group">
+                <label for="interested_domain">Interested Domain</label>
+                <select id="interested_domain" name="interested_domain" required>
+                    <option value="" disabled selected>Select Domain</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="AI/ML">AI/ML</option>
+                    <option value="Cybersecurity">Cybersecurity</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- URL:     http://localhost/assignment 2/index.html.    -->
